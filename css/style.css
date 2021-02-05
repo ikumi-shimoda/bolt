@@ -18,12 +18,6 @@ a {
 	width: 1100px;
 }
 
-@media (max-width: 1199px) {
-	.inner {
-			width: 97%;
-	}
-}
-
 .icon {
 	color: #74cfae;
 }
@@ -40,6 +34,7 @@ a {
 	color: #333;
 }
 
+/* pc */
 .header {
 	background-color: #fff;
 	position: fixed;
@@ -59,20 +54,8 @@ a {
 	padding: 14px 12px;
 }
 
-@media (max-width: 767px) {
-	.header-contact {
-			display: none;
-	}
-}
-
 .pc-logo {
 	font-size: 40px;
-}
-
-@media (max-width: 767px) {
-	.pc-logo {
-		font-size: 50px;
-	}
 }
 
 .sp-menu {
@@ -109,12 +92,6 @@ a {
 	font-weight: 700;
 }
 
-@media (max-width: 767px) {
-	.main h1 {
-		font-size: 80px;
-	}
-}
-
 .main h2 {
 	font-size: 24px;
 }
@@ -123,12 +100,6 @@ a {
 	background-color: #f2f2f2;
 	padding: 250px 0;
 	width: 100%;
-}
-
-@media (max-width: 767px) {
-	.title {
-		padding: 160px 0 130px 0;
-	}
 }
 
 .title-inner p {
@@ -150,27 +121,13 @@ a {
 	display: flex;
 }
 
-@media (max-width: 1199px) {
-	.description-inner {
-			display: flex;
-			flex-direction: column;
-	}
-}
-
 .description-box {
 	color: #fff;
 	width: 60%;
 }
 
-@media (max-width: 1199px) {
-	.description-box {
-			margin: 0 auto;
-			padding: 20px 0 25px 0;
-			width: 100%;
-	}
-}
-
-.description-title {
+.description-title,
+.works h2 {
 	font-size: 24px;
 }
 
@@ -185,20 +142,10 @@ a {
 	padding: 60px 0 70px 0;
 }
 
-.works h2 {
-	font-size: 24px;
-}
-
 .works-img-row {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 40px;
-}
-
-@media (max-width: 1199px) {
-	.works-img-row {
-			flex-direction: column;
-	}
 }
 
 .works-img-row li {
@@ -211,18 +158,6 @@ a {
 
 .works-img-row li:nth-child(3n-2) {
 	margin-left: 0;
-}
-
-@media (max-width: 1199px) {
-	.works-img-row li {
-			margin: 0;
-	}
-}
-
-@media (max-width: 1199px) {
-	.works-img-row li:nth-child(3n+4) {
-			margin-top: 80px;
-	}
 }
 
 .works-img-row li a {
@@ -243,24 +178,13 @@ a {
 	display: flex;
 	margin-top: 90px;
 }
-@media (max-width: 1199px) {
-	.email-inner {
-			flex-direction: column;
-			margin-top: 80px;
-	}
-}
+
 .email-txt {
 	margin: 0 90px;
 	line-height: 30px;
 	font-size: 20px;
 	width: 60%;
 	word-break: break-all;
-}
-@media (max-width: 1199px) {
-	.email-txt {
-			width: 97%;
-			padding: 0 0 40px 0;
-	}
 }
 
 .email-btn {
@@ -279,36 +203,21 @@ a {
 }
 
 .skill-circle {
-	padding-top: 30px;
+	margin-top: 30px;
 }
 
-.skill-circle ul {
+.skill-circle,
+.sns-icons  {
 	display: flex;
+	justify-content: center;
 }
-@media (max-width: 1199px) {
-	.skill-circle ul {
-			flex-direction: column;
-	}
-}
-.skill-circle ul li {
+
+.skill-circle li {
 	margin-left: 180px;
-	margin: 0 auto;
 }
 
-.skill-circle ul li:first-child {
+.skill-circle li:first-child {
 	margin-left: 0;
-}
-
-@media (max-width: 1199px) {
-	.skill-circle ul li {
-		margin: 88px 0 0 0;
-	}
-}
-
-@media (max-width: 1199px) {
-	.skill-circle ul li:first-child {
-		margin-top: 0;
-	}
 }
 
 .skill-txt {
@@ -321,33 +230,17 @@ a {
 	padding: 200px 0;
 }
 
-@media (max-width: 767px) {
-	.sns {
-		padding: 50px 0;
-	}
-}
-
-.sns ul {
-	display: flex;
-	justify-content: center;
-}
-@media (max-width: 767px) {
-	.sns ul {
-			flex-direction: column;
-	}
-}
-
-.sns ul li {
+.sns-icons li {
 	transition: 0.3s;
 }
 
-.sns ul li a {
+.sns-icons li a {
 	padding: 30px 0;
 	display: inline-block;
 	width: 185px;
 }
 
-.sns ul li:hover {
+.sns-icons li:hover {
 	background-color: #fff;
 }
 
@@ -362,4 +255,92 @@ a {
 
 .footer-txt {
 	color: #fff;
+}
+
+/* tab */
+@media (max-width: 1199px) {
+	.inner {
+			width: 97%;
+	}
+
+	.description-inner {
+		display: flex;
+		flex-direction: column;
+}
+
+.description-box {
+	margin: 0 auto;
+	padding: 20px 0 25px 0;
+	width: 100%;
+}
+
+.works-img-row {
+	flex-direction: column;
+}
+
+.works-img-row li {
+	margin: 0;
+}
+
+.works-img-row li:nth-child(3n+4) {
+	margin-top: 80px;
+}
+
+.email-inner {
+	flex-direction: column;
+	margin-top: 80px;
+}
+
+.email-txt {
+	width: 97%;
+	margin: 0 auto;
+}
+
+.email-btn {
+	text-align: center;
+	margin-top: 40px;
+	width: 100%;
+}
+
+.skill-circle {
+	flex-direction: column;
+}
+
+.skill-circle li {
+	margin-top: 88px;
+	margin-left: 0;
+}
+
+.skill-circle li:first-child {
+	margin-top: 0;
+}
+
+}
+
+/* sp */
+@media (max-width: 767px) {
+	.header-contact {
+			display: none;
+	}
+
+	.pc-logo {
+		font-size: 50px;
+	}
+
+	.main h1 {
+		font-size: 80px;
+	}
+
+	.title {
+		padding: 160px 0 130px 0;
+	}
+
+	.sns {
+		padding: 50px 0;
+	}
+
+	.sns ul {
+		flex-direction: column;
+}
+
 }
