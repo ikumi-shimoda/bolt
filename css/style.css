@@ -28,6 +28,18 @@ a {
 	color: #74cfae;
 }
 
+.btn {
+	background-color: #74cfae;;
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+}
+
+.btn:hover {
+	color: #333;
+	transition: 0.3s;
+}
+
 .header {
 	background-color: #fff;
 	position: fixed;
@@ -44,10 +56,6 @@ a {
 }
 
 .header-contact {
-	background-color: #74cfae;
-	color: #fff;
-	display: inline-block;
-	font-size: 12px;
 	padding: 14px 12px;
 }
 
@@ -55,11 +63,6 @@ a {
 	.header-contact {
 			display: none;
 	}
-}
-
-.header-contact:hover {
-	color: #333;
-	transition: 0.3s;
 }
 
 .pc-logo {
@@ -242,10 +245,11 @@ a {
 	}
 }
 .email-txt {
-	padding: 0 90px 0 90px;
+	margin: 0 90px;
 	line-height: 30px;
 	font-size: 20px;
-	width: 50%;
+	width: 60%;
+	word-break: break-all;
 }
 @media (max-width: 1199px) {
 	.email-txt {
@@ -253,17 +257,16 @@ a {
 			padding: 0 0 40px 0;
 	}
 }
+
 .email-btn {
-	background-color: #74cfae;;
-	color: #fff;
-	display: inline-block;
-	font-size: 12px;
+	width: 40%;
+	text-align: left;
+}
+
+.email {
 	padding: 14px 20px;
 }
-.email-btn:hover {
-	color: #333;
-	transition: 0.3s;
-}
+
 .skills {
 	background-color: #4e4e4e;
 	color: #fff;
