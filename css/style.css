@@ -32,12 +32,12 @@ a {
 	background-color: #74cfae;;
 	color: #fff;
 	display: inline-block;
+	transition: 0.3s;
 	font-size: 12px;
 }
 
 .btn:hover {
 	color: #333;
-	transition: 0.3s;
 }
 
 .header {
@@ -47,10 +47,10 @@ a {
 	left: 0;
 	width: 100%;
 	z-index: 100;
+	padding: 15px 0;
 }
 
 .header-inner {
-	padding: 15px 0;
 	display: flex;
 	justify-content: space-between;
 }
@@ -225,23 +225,28 @@ a {
 	}
 }
 
+.works-img-row li a {
+	display: inline-block;
+}
+
 .works-img {
 	opacity: 0.7;
 	vertical-align: bottom;
+	transition: 0.3s;
 }
 
 .works-img:hover {
 	opacity: 1;
-	transition: 0.3s;
 }
+
 .email-inner {
 	display: flex;
-	padding-top: 90px;
+	margin-top: 90px;
 }
 @media (max-width: 1199px) {
 	.email-inner {
 			flex-direction: column;
-			padding-top: 80px;
+			margin-top: 80px;
 	}
 }
 .email-txt {
@@ -272,9 +277,13 @@ a {
 	color: #fff;
 	padding: 70px 0 100px 0;
 }
+
+.skill-circle {
+	padding-top: 30px;
+}
+
 .skill-circle ul {
 	display: flex;
-	padding-top: 30px;
 }
 @media (max-width: 1199px) {
 	.skill-circle ul {
@@ -283,6 +292,7 @@ a {
 }
 .skill-circle ul li {
 	margin-left: 180px;
+	margin: 0 auto;
 }
 
 .skill-circle ul li:first-child {
@@ -301,12 +311,9 @@ a {
 	}
 }
 
-.skill-circle ul li img {
-	padding-bottom: 20px;
-}
-
 .skill-txt {
 	font-size: 16px;
+	margin-top: 20px;
 }
 
 .sns {
@@ -330,16 +337,18 @@ a {
 	}
 }
 
+.sns ul li {
+	transition: 0.3s;
+}
+
 .sns ul li a {
+	padding: 30px 0;
 	display: inline-block;
 	width: 185px;
-	height: 80px;
-	padding-top: 40px;
 }
 
 .sns ul li:hover {
 	background-color: #fff;
-	transition: 0.3s;
 }
 
 .footer {
