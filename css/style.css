@@ -75,7 +75,7 @@ a {
 
 .sp-menu-border {
 	height: 2px;
-	background-color: rgb(196, 171, 171);
+	background-color: #ddd;
 	display: block;
 	position: absolute;
 	width: 100%;
@@ -190,11 +190,11 @@ a {
 
 .email-inner {
 	display: flex;
+	justify-content: center;
 	margin-top: 90px;
 }
 
 .email-txt {
-	margin: 0 90px;
 	line-height: 30px;
 	font-size: 20px;
 	width: 60%;
@@ -202,7 +202,7 @@ a {
 }
 
 .email-btn {
-	text-align: left;
+	margin-left: 90px;
 }
 
 .email {
@@ -308,13 +308,11 @@ a {
 
 	.email-txt {
 		width: 97%;
-		margin: 0 auto;
 	}
 
 	.email-btn {
 		text-align: center;
-		margin-top: 40px;
-		width: 100%;
+		margin: 40px 0 0 0;
 	}
 
 	.skill-circle li {
